@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Reflect Template">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <title>SmartMail Login Page</title>
+    <link rel="stylesheet" href="./static/js_css/style_all.css" type="text/css" media="screen">
+        
+        
+        
+        <!-- to choose another color scheme uncomment one of the foloowing stylesheets and wrap styl1.css into a comment -->
+        <link rel="stylesheet" href="./static/js_css/style1.css" type="text/css" media="screen">
+        
+        
+        <link rel="stylesheet" href="./static/js_css/jquery-ui.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="./static/js_css/jquery.wysiwyg.css" type="text/css" media="screen">
+        
+        <!--Internet Explorer Trancparency fix-->
+        <!--[if IE 6]>
+        <script src="js/ie6pngfix.js"></script>
+        <script>
+          DD_belatedPNG.fix('#head, a, a span, img, .message p, .click_to_close, .ie6fix');
+        </script>
+        <![endif]--> 
+        
+        <script type="text/javascript" src="./static/js_css/jquery.js"></script><style type="text/css"></style>
+        <script type="text/javascript" src="./static/js_css/jquery-ui.js"></script>
+        <script type="text/javascript" src="./static/js_css/jquery.wysiwyg.js"></script>
+        <script type="text/javascript" src="./static/js_css/custom.js"></script>
+    <style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style></head>
+    
+    <body class="nobackground">
+    	<div id="top">
+    		<div id="bg_wrapper">
+        		
+                                    <h2 class="jquery_tab_title">Input fields</h2>
+                                    <form method="post" action="">
+                                        <p>
+                                            <label for="name">Name (small input field)</label>
+                                            <input class="input-small" type="text" value="" name="name" id="name">
+                                        </p>
+                                        
+                                        <p>
+                                            <label for="mail">E-Mail address (medium sized input field)</label>
+                                            <input class="input-medium" type="text" value="" name="mail" id="mail">
+                                        </p>
+                                        
+                                        <p>
+                                            <label for="url">Your Website (big input field)</label>
+                                            <input class="input-big" type="text" value="" name="url" id="url">
+                                        </p>
+                                        
+                                        <p>
+                                            <label for="flex">Flexfield (flexible input field, width depends on window size)</label>
+                                            <input class="input-flex" type="text" value="" name="flex" id="flex">
+                                        </p>
+                                        
+                                        <p>
+                                			<label for="date">Click into input field to choose date</label>
+                                			<input class="input-small flexy_datepicker_input hasDatepicker" type="text" value="__ / __ / ____" name="flexy_datepicker" id="date">	
+                                        </p>
+                                        
+                                        <p>
+                                            <label for="selectbox">This is a dropdown list</label>
+                                            <select name="selectbox" id="selectbox">
+                                                <option value="">Choose an option</option>
+                                                <option value="1">Home</option>
+                                                <option value="2">Member</option>
+                                                <option value="3">Portfolio</option>
+                                                <option value="4">Blog</option>
+                                            </select>
+                                        </p>
+                                        
+                                        <p>
+                                            <label for="radiobutton1" class="inline">True</label>
+                                            <input id="radiobutton1" name="radiobutton" type="radio" value="1" class="jquery_improved" checked="checked">
+                                            
+                                            <label for="radiobutton2" class="inline">False</label>
+                                            <input id="radiobutton2" name="radiobutton" type="radio" value="2" class="jquery_improved">
+                                        </p>
+                                        
+                                        <p>
+                                            <label for="checkbox1" class="inline">True</label>
+                                            <input type="checkbox" value="1" name="checkbox1" id="checkbox1">
+                                            <label for="checkbox2" class="inline">False</label>
+                                            <input type="checkbox" value="2" name="checkbox2" id="checkbox2">
+                                        </p>
+                                        
+                                        <p>
+                                           <label for="textarea">Enter some Text</label>
+                                           <textarea name="textarea" id="textarea" cols="60" rows="15"></textarea>
+                                        </p>
+                                        
+                                        <p>
+                                           <label for="textarea2">Enter some Text into the rich text editor</label>
+                                           <div style="width: 501px;" class="wysiwyg"><ul class="panel"><li><a class="bold"><!-- --></a></li><li><a class="italic"><!-- --></a></li><li class="separator"></li><li><a class="createLink"><!-- --></a></li><li><a class="insertImage"><!-- --></a></li><li class="separator"></li><li><a class="h1"><!-- --></a></li><li><a class="h2"><!-- --></a></li><li><a class="h3"><!-- --></a></li><li class="separator"></li><li><a class="increaseFontSize"><!-- --></a></li><li><a class="decreaseFontSize"><!-- --></a></li><li class="separator"></li><li><a class="removeFormat"><!-- --></a></li></ul><div style="clear: both;"><!-- --></div><iframe style="min-height: 250px; width: 493px;" id="textarea2IFrame"></iframe></div><textarea name="textarea" id="textarea2" class="richtext" cols="60" rows="15" style="display: none;"></textarea>
+                                        </p>
+                                        
+                                        <p>
+                                            <input class="button" name="submit" type="submit" value="Submit">
+                                        </p>
+                                    </form>
+                                    
+                                
+        
+        <div class="login_message message error">
+          <p>Wrong Username or password.</p>
+        </div>
+    	</div>
+   </div>
+    
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-helper-hidden-accessible"></div>
+</body>
+</html>
